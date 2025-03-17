@@ -14,13 +14,24 @@
 </head>
 
 <body>
+ <div class="page-loader">
+        <div class="spinner"></div>
+        <div class="txt">loding....</div>
+    </div>
+<div class="cursor"></div>
+<div class="cursor2"></div>
 
-
+<a id="button">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-arrow-badge-up">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path d="M11.375 6.22l-5 4a1 1 0 0 0 -.375 .78v6l.006 .112a1 1 0 0 0 1.619 .669l4.375 -3.501l4.375 3.5a1 1 0 0 0 1.625 -.78v-6a1 1 0 0 0 -.375 -.78l-5 -4a1 1 0 0 0 -1.25 0z" />
+    </svg>
+</a>
     <!-- HEADER-------------->
 <!-- HEADER-------------->
 
 
-<header class="head">
+<header class="header">
     <div class="topbar">
         <div class="container">
             <div class="topbar-inner">
@@ -28,8 +39,7 @@
                     <div class="topbar-content">
                         <a href="tel:01234 567890">
                             <img src="../../assets/img/icons/call.png" alt="call" title="call" />
-                            <a href="javascript:void(0)">01234 567890</a>
-                            <h4>- Mon-Fri 9am to 6.30pm</h4>
+                            <a href="javascript:void(0)">01234 567890- Mon-Fri 9am to 6.30pm</a>
                         </a>
 
                     </div>
@@ -59,8 +69,10 @@
             <div class="header-inner">
                 <div class="header-left-section">
                     <div class="logo-light">
-                        <img src="../../assets/img/icons/logo-dark.png" title="logo-dark" alt="logo-dark" class="logo-darks" />
-                        <img src="../../assets/img/icons/logo-light.png" title="logo-light" alt="logo-light" class="logo d-none" />
+                       <a href="javascript:void(0)">
+                            <img src="../../assets/img/icons/logo-dark.png" title="logo-dark" alt="logo-dark" class="logo-darks" />
+                            <img src="../../assets/img/icons/logo-light.png" title="logo-light" alt="logo-light" class="logo d-none" />
+                       </a>
                     </div>
                 </div>
                 <div class="header-right-section">
@@ -74,17 +86,44 @@
                     <nav id="menu">
 
                         <ul>
-                            <li>
-                                <a href="javascript:void(0)">Who are we</a>
+                            <li class="relative">
+                                <a href="../../assets/html/who-are-we.html" target="_blank" class="navs">Who are we</a>
+                                <div class="dropdown">
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:void(0)">Who are we</a>
+                                        </li>
+                                        <li class="relative">
+                                            <a href="javascript:void(0)">Who are we2</a>
+
+                                            <div class="submenu">
+                                                <ul>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Who are we 1</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Who are we 2</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Who are we 3</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">Who are we||</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </li>
                             <li>
-                                <a href="javascript:void(0)">Testimonial</a>
+                                <a href="../../assets/html/testimonial.html" target="_blank" class="navs">Testimonial</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)">News & Articles</a>
+                                <a href="../../assets/html/news-open.html" target="_blank" class="navs">News & Articles</a>
                             </li>
-                            <li>
-                                <a href="javascript:void(0)" class="btn-primary" style="border: 1px solid
+                            <li class="btn-nav">
+                                <a href="javascript:void(0)" class="btn-primary navs" style="border: 1px solid
                                 black;">Get In Touch</a>
                             </li>
                             <div class="header-icons">
@@ -124,7 +163,16 @@
 
                 <div class="policy-right-section">
                    <div class="privacy-policy-section" id="policy">
-                            <h2>Privacy Policy</h2>
+                            <div class="linkWrap">
+                                <a class="style-17" href="">
+                                    <span>
+                                        <h2>Privacy Policy</h2>
+                                    </span>
+                                    <svg class="link__graphic link__graphic--stroke link__graphic--scribble" width="100%" height="11" viewBox="0 0 101 9">
+                                        <path d="M.426 1.973C4.144 1.567 17.77-.514 21.443 1.48 24.296 3.026 24.844 4.627 27.5 7c3.075 2.748 6.642-4.141 10.066-4.688 7.517-1.2 13.237 5.425 17.59 2.745C58.5 3 60.464-1.786 66 2c1.996 1.365 3.174 3.737 5.286 4.41 5.423 1.727 25.34-7.981 29.14-1.294" pathLength="1"></path>
+                                    </svg>
+                                </a>
+                            </div>
                             <p>Suspendisse a condimentum nunc. Duis lacinia urna in faucibus interdum. Donec scelerisque
                                 tortor gravida orci scelerisque, a dictum enim porttitor. Curabitur vulputate ex eget enim
                                  ultrices. Donec at enim sagittis, dapibus sem nec, iaculis leo. Pellentesque vitae
@@ -165,7 +213,17 @@
                             </p>
                    </div>
                 <div class="privacy-policy-section border" id="policy1">
-                    <h2>Terms & Conditions</h2>
+
+                   <div class="linkWrap">
+                    <a class="style-17" href="">
+                        <span>
+                            <h2>Terms & Conditions</h2>
+                        </span>
+                        <svg class="link__graphic link__graphic--stroke link__graphic--scribble" width="100%" height="11" viewBox="0 0 101 9">
+                            <path d="M.426 1.973C4.144 1.567 17.77-.514 21.443 1.48 24.296 3.026 24.844 4.627 27.5 7c3.075 2.748 6.642-4.141 10.066-4.688 7.517-1.2 13.237 5.425 17.59 2.745C58.5 3 60.464-1.786 66 2c1.996 1.365 3.174 3.737 5.286 4.41 5.423 1.727 25.34-7.981 29.14-1.294" pathLength="1"></path>
+                        </svg>
+                    </a>
+                    </div>
                     <p>Suspendisse a condimentum nunc. Duis lacinia urna in faucibus interdum. Donec scelerisque
                         tortor gravida orci scelerisque, a dictum enim porttitor. Curabitur vulputate ex eget enim
                         ultrices. Donec at enim sagittis, dapibus sem nec, iaculis leo. Pellentesque vitae
@@ -307,6 +365,7 @@
                                 <path d="M13 6l6 6" />
                             </svg>
                         </button>
+                        <h6>PRIVACY POLICY</h6>
                     </form>
                 </div>
             </div>
@@ -317,39 +376,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" type="text/javascript"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" type="text/javascript"></script>
-    <script>
-          $(window).on('load', function () {
-                setTimeout(function () { // allowing 3 secs to fade out loader
-                    $('.page-loader').fadeOut('slow');
-                }, 3500);
-            });
+    <script src="../../assets/js/main.js" type="text/javascript"></script>
 
-
-            $("#toggle").click(function () {
-                $(this).toggleClass("on");
-                $("#menu").slideToggle();
-            });
-            window.addEventListener("scroll", function () {
-                let header = document.querySelector("header");
-                if (window.scrollY >= 40) {
-                    header.style.backgroundColor = "whitesmoke";
-                    header.style.Color = "white";
-                    header.style.transition = "background-color 0.3s ease, padding 0.3s ease";
-                } else {
-                    header.style.backgroundColor = "transparent";
-                     header.style.color= "white";
-                    header.style.padding = " 0";
-                }
-            });
-            window.addEventListener("scroll", function () {
-                let header = document.querySelector("header");
-                if (window.scrollY >= 40) {
-                    header.classList.add("scrolled");
-                } else {
-                    header.classList.remove("scrolled");
-                }
-            });
-    </script>
 </body>
 
 </html>

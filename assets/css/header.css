@@ -12,6 +12,11 @@
 }
 .topbar-content img{
     margin-right: 10px;
+    transition: 0.3s all ease-in-out;
+}
+.topbar-content img:hover{
+    transform:scale(1.1);
+    transition: 0.3s all ease-in-out;
 }
 .topbar-content{
     display: flex;
@@ -46,7 +51,7 @@
 header{
     position: fixed;
     width: 100%;
-    z-index: 9;
+    z-index: 999;
  }
 .header-inner{
     display: flex;
@@ -54,11 +59,17 @@ header{
     align-items: center;
     margin: 10px 0;
 }
+.header-innerr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .header-right-section ul{
     list-style: none;
     display: flex;
     align-items: center;
     gap: 40px;
+    margin-block: 10px;
 }
 
 .header-right-section .logo-light img{
@@ -247,6 +258,7 @@ footer{
     text-decoration: underline;
     text-align: center;
     margin-top: 20px;
+    cursor: pointer;
 }
 .footer-left-section h5:hover{
     color: var(--theme-green);
@@ -279,6 +291,14 @@ footer{
        transition: 0.3s all ease-in-out;
 
 }
+.forms h6{
+    text-align: end;
+    color: var(--theme-white);
+    font-size: 12px;
+    font-weight: 300;
+    padding-top: 30px;
+    cursor: pointer;
+}
 .footer-right-section .icons-img{
 display: flex;
 text-align: end;
@@ -301,13 +321,13 @@ text-align: end;
 }
 button{
     position: absolute;
-    top:9%;
-    right: 2%;
+    top:1%;
+    right: 1%;
     z-index: 999;
     background-color: var(--theme-green);
     border: none;
     border-radius: 50%;
-    padding: 10px;
+    padding: 12px;
     cursor: pointer;
        transition: 0.4s all ease-in-out;
 }
@@ -332,6 +352,7 @@ button:hover{
     position: absolute;
     top: -43%;
     right:25%;
+    z-index: -1;
 }
 
 
@@ -375,4 +396,148 @@ button:hover{
 
 .head .header-right-section li a{
     color: #000;
+}
+
+/* CURSOR---- */
+
+.cursor {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 1px solid black;
+  transition: all 200ms ease-out;
+  position: fixed;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  transform: translate(calc(-50% + 15px), -50%);
+}
+
+.cursor2 {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: black;
+  opacity: .3;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: width .3s, height .3s, opacity .3s;
+}
+
+.hover {
+  background-color: var(--dark);
+  opacity: 0.5;
+}
+
+.cursorinnerhover {
+  width: 50px;
+  height: 50px;
+  opacity: .5;
+}
+ a.navs{
+    color: var(--theme-black);
+}
+
+
+/* .DROPDOWM--- */
+
+.dropdown{
+	box-shadow:0px 2px 20px 0px rgba(62,65,159,0.09);
+	position:absolute;
+	top:305px;
+	left:0;
+    width:200px;
+	visibility:hidden;
+	opacity:0;
+    display: flex;
+    flex-direction: column;
+	transition:0.2s;
+	background-color:var(--theme-white);
+    border-radius: 10px;
+	z-index:9;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.dropdown li{
+	margin:0;
+    color: var(--theme-black);
+
+}
+.dropdown a{
+      color: var(--theme-black);
+}
+nav li:hover .dropdown{
+	visibility:visible;
+	opacity:1;
+	top:100%;
+
+}
+.submenu{
+	position:absolute;
+	top:5%;
+	left:135%;
+	width:200px;
+	box-shadow:0px 2px 20px 0px rgba(62,65,159,0.09);
+	visibility:hidden;
+	opacity:0;
+	transition:0.2s;
+	background-color:var(--theme-white);
+	z-index:9;
+    margin-left: 10px;
+     border-radius: 10px;
+
+
+}
+nav .dropdown li:hover .submenu{
+	visibility:visible;
+	opacity:1;
+	top:0;
+}
+.dropdown ul {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* BACK-TO-TOP-- */
+
+#button {
+  display: inline-block;
+  background-color:var(--theme-green);
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition:background-color .3s,
+ opacity 0.5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color:var(--dark);
+  color: var(--theme-white);
+}
+#button:active {
+  background-color:var(--dark);
+  color: var(--theme-white);
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
 }

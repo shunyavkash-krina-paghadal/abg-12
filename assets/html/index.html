@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>abg-network</title>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://vineethtrv.github.io/loader/">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" type="text/css" />
     <link rel="stylesheet" href="../../assets/fonts/rounded/stylesheet.css" type="text/css">
@@ -15,10 +16,20 @@
 <div class="page-loader">
     <div class="spinner"></div>
     <div class="txt">loding....</div>
-</div>
-<div class="group-img" style="position: relative;">
+</div> 
+<div class="group-img" >
     <img src="../../assets/img/vectour/Group 2563.svg" class="shape-imgs" />
 </div>
+
+<div class="cursor"></div>
+<div class="cursor2"></div>
+
+<a id="button">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-arrow-badge-up">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path d="M11.375 6.22l-5 4a1 1 0 0 0 -.375 .78v6l.006 .112a1 1 0 0 0 1.619 .669l4.375 -3.501l4.375 3.5a1 1 0 0 0 1.625 -.78v-6a1 1 0 0 0 -.375 -.78l-5 -4a1 1 0 0 0 -1.25 0z" />
+    </svg>
+</a>
 
 <!-- HEADER-------------->
 
@@ -31,8 +42,7 @@
                     <div class="topbar-content">
                         <a href="tel:01234 567890">
                             <img src="../../assets/img/icons/call.png" alt="call" title="call" />
-                            <a href="javascript:void(0)">01234 567890</a>
-                            <h4>- Mon-Fri 9am to 6.30pm</h4>
+                            <a href="javascript:void(0)">01234 567890- Mon-Fri 9am to 6.30pm</a>
                         </a>
 
                     </div>
@@ -62,8 +72,10 @@
         <div class="header-inner">
             <div class="header-left-section">
                <div class="logo-light">
-                <img src="../../assets/img/icons/logo-dark.png" title="logo-dark" alt="logo-dark" class="logo-dark"/>
-                   <img src="../../assets/img/icons/logo-light.png" title="logo-light" alt="logo-light" class="logo"/>
+                  <a href="javascript:void(0)">
+                    <img src="../../assets/img/icons/logo-dark.png" title="logo-dark" alt="logo-dark" class="logo-dark" />
+                    <img src="../../assets/img/icons/logo-light.png" title="logo-light" alt="logo-light" class="logo" />
+                  </a>
                </div>
             </div>
             <div class="header-right-section">
@@ -75,14 +87,41 @@
                  <nav id="menu">
 
                         <ul>
-                            <li>
-                                <a href="javascript:void(0)">Who are we</a>
+                            <li class="relative">
+                                <a href="../../assets/html/who-are-we.html" target="_blank">Who are we</a>
+                                <div class="dropdown">
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:void(0)">Services</a>
+                                        </li>
+                                        <li class="relative">
+                                            <a href="javascript:void(0)">Services Style2</a>
+
+                                            <div class="submenu">
+                                                <ul>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Services 1</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Services 2</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Services 3</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">Services Single</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </li>
                             <li>
-                                <a href="javascript:void(0)">Testimonial</a>
+                                <a href="../../assets/html/testimonial.html" target="_blank">Testimonial</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)">News & Articles</a>
+                                <a href="../../assets/html/news.html    " target="_blank">News & Articles</a>
                             </li>
                             <li>
                                 <a href="javascript:void(0)" class="btn-primary">Get In Touch</a>
@@ -118,7 +157,7 @@
                         <img src="../../assets/img/background/banner.png" />
                     </div>
                     <div class="banner-content">
-                        <h1>Welcome to ABG Network</h1>
+                        <h1 class="animate__animated animate__fadeInDown">Welcome to ABG Network</h1>
                         <p>No other courier company makes deliveries as easy as we do</p>
                         <div class="d-flex button align-center">
                             <a href="javascript:void(0)" class="btn-info">What We Do</a>
@@ -208,14 +247,24 @@
                 <h4 class="our_left_section_heading">
                     OUR STORY
                 </h4>
-                <h2 class="our_left_heading">
-                    What We Do
-                </h2>
+
+                <div class="linkWrap">
+                    <a class="style-17" href="">
+                        <span>
+                            <h2 class="our_left_heading">
+                            What We Do
+                           </h2>
+                         </span>
+                        <svg class="link__graphic link__graphic--stroke link__graphic--scribble" width="100%" height="11" viewBox="0 0 101 9">
+                            <path d="M.426 1.973C4.144 1.567 17.77-.514 21.443 1.48 24.296 3.026 24.844 4.627 27.5 7c3.075 2.748 6.642-4.141 10.066-4.688 7.517-1.2 13.237 5.425 17.59 2.745C58.5 3 60.464-1.786 66 2c1.996 1.365 3.174 3.737 5.286 4.41 5.423 1.727 25.34-7.981 29.14-1.294" pathLength="1"></path>
+                        </svg>
+                    </a>
+                </div>
                 <p class="our_left_section_para">
                     Suspendisse nec mi tempor, commodo est quis, aliquet felis. Sed et consectetur dolor. Praesent
                     eget viverra libero. Sed euismod maximus nisi. Ut hendrerit libero sit amet sem mollis placerat. Orci varius natoque penatibus
                 </p>
-                <a href="javascript:void(0)" class="btn-info">Learn More</a>
+                <a href="javascript:void(0)" class="btn-info-1">Learn More</a>
             </div>
             <div class="our_right_section">
                 <img src="../../assets/img/background/1.png" alt="images" draggable="false">
@@ -227,11 +276,22 @@
 
 <!-- THE-PROCESS------------------>
 
-<section class="the-process">
+<section class="the-process" style="margin-top: 200px;">
     <div class="container">
 
         <div class="the-title">
-            <h2>The Process</h2>
+            <div class="linkWrap">
+                <a class="style-17" href="">
+                    <span>
+                        <h2>
+                        The Process
+                        </h2>
+                    </span>
+                    <svg class="link__graphic link__graphic--stroke link__graphic--scribble" width="100%" height="11" viewBox="0 0 101 9">
+                        <path d="M.426 1.973C4.144 1.567 17.77-.514 21.443 1.48 24.296 3.026 24.844 4.627 27.5 7c3.075 2.748 6.642-4.141 10.066-4.688 7.517-1.2 13.237 5.425 17.59 2.745C58.5 3 60.464-1.786 66 2c1.996 1.365 3.174 3.737 5.286 4.41 5.423 1.727 25.34-7.981 29.14-1.294" pathLength="1"></path>
+                    </svg>
+                </a>
+            </div>
             <p>Suspendisse nec mi tempor, commodo est quis, aliquet felis. Sed et consectetur dolor. Praesent eget viverra libero. Sed euismod maximus nisi.</p>
         </div>
 
@@ -332,7 +392,19 @@
 <section class="services">
     <div class="container">
         <div class="services-title">
-            <h2>Latest News</h2>
+
+            <div class="linkWrap">
+                <a class="style-17" href="">
+                    <span>
+                        <h2>
+                        Latest News
+                        </h2>
+                    </span>
+                    <svg class="link__graphic link__graphic--stroke link__graphic--scribble" width="100%" height="11" viewBox="0 0 101 9">
+                        <path d="M.426 1.973C4.144 1.567 17.77-.514 21.443 1.48 24.296 3.026 24.844 4.627 27.5 7c3.075 2.748 6.642-4.141 10.066-4.688 7.517-1.2 13.237 5.425 17.59 2.745C58.5 3 60.464-1.786 66 2c1.996 1.365 3.174 3.737 5.286 4.41 5.423 1.727 25.34-7.981 29.14-1.294" pathLength="1"></path>
+                    </svg>
+                </a>
+            </div>
              <a href="javascript:void(0)" class="btn-sucsess">view all</a>
         </div>
         <div class="services-inner">
@@ -398,7 +470,7 @@
 
 <!-- ALL-LOGOS----------------->
 
-<div class="Marquee">
+<section class="Marquee">
     <div class="Marquee-content">
 
         <div class="Marquee-tag">
@@ -438,7 +510,7 @@
             <img src="../../assets/img/icons/6.png"/>
         </div>
     </div>
-</div>
+</section>
 
 
 <!-- FOOTER--------->
@@ -513,6 +585,7 @@
                             <path d="M13 6l6 6" />
                         </svg>
                         </button>
+                        <h6>PRIVACY POLICY</h6>
                     </form>
                 </div>
             </div>
@@ -523,41 +596,11 @@
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" type="text/javascript"></script>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" type="text/javascript"></script>
+<script src="../../assets/js/main.js" type="text/javascript"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js" type="text/javascript"></script>
 <script>
-    var swiper = new Swiper(".mySwiper", {
-        pagination: {
-            el: ".swiper-pagination",
-        },
-
-    });
-  $(window).on('load', function () {
-        setTimeout(function () { // allowing 3 secs to fade out loader
-            $('.page-loader').fadeOut('slow');
-        }, 3500);
-    });
-
-
-    $("#toggle").click(function () {
-            $(this).toggleClass("on");
-            $("#menu").slideToggle();
-        });
-    window.addEventListener("scroll", function () {
-        let header = document.querySelector("header");
-        if (window.scrollY >= 40) {
-            header.style.backgroundColor ="var(--dark)";
-            header.style.transition = "background-color 0.3s ease, padding 0.3s ease";
-        } else {
-            header.style.backgroundColor = "transparent";
-            header.style.padding = " 0";
-        }
-    });
-    window.addEventListener("scroll", function () {
-        let header = document.querySelector("header");
-        if (window.scrollY >= 40) {
-            header.classList.add("scrolled");
-        } else {
-            header.classList.remove("scrolled");
-        }
+    AOS.init({
+        duration: 1200,
     });
 </script>
 </body>

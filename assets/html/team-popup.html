@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>who are we </title>
+    <title>team popup </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
@@ -22,10 +22,17 @@
     <div class="spinner"></div>
     <div class="txt">loding....</div>
 </div>
+<div class="cursor"></div>
+<div class="cursor2"></div>
 
+<a id="button">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-arrow-badge-up">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path d="M11.375 6.22l-5 4a1 1 0 0 0 -.375 .78v6l.006 .112a1 1 0 0 0 1.619 .669l4.375 -3.501l4.375 3.5a1 1 0 0 0 1.625 -.78v-6a1 1 0 0 0 -.375 -.78l-5 -4a1 1 0 0 0 -1.25 0z" />
+    </svg>
+</a>
     <!-- HEADER-------------->
-
-<header>
+<header class="header">
     <div class="topbar">
         <div class="container">
             <div class="topbar-inner">
@@ -33,8 +40,7 @@
                     <div class="topbar-content">
                         <a href="tel:01234 567890">
                             <img src="../../assets/img/icons/call.png" alt="call" title="call" />
-                            <a href="javascript:void(0)">01234 567890</a>
-                            <h4>- Mon-Fri 9am to 6.30pm</h4>
+                            <a href="javascript:void(0)">01234 567890- Mon-Fri 9am to 6.30pm</a>
                         </a>
 
                     </div>
@@ -61,33 +67,65 @@
         </div>
     </div>
     <div class="container">
-        <div class="header-inner">
+        <div class="header-innerr">
             <div class="header-left-section">
                 <div class="logo-light">
-                    <img src="../../assets/img/icons/logo-dark.png" title="logo-dark" alt="logo-dark" class="logo-dark" />
-                    <img src="../../assets/img/icons/logo-light.png" title="logo-light" alt="logo-light" class="logo" />
+                    <a href="javascript:void(0)">
+                        <img src="../../assets/img/icons/logo-dark.png" title="logo-dark" alt="logo-dark" class="logo-darks" />
+                        <img src="../../assets/img/icons/logo-light.png" title="logo-light" alt="logo-light" class="logo d-none" />
+                    </a>
                 </div>
             </div>
             <div class="header-right-section">
                 <div id="toggle">
-                    <div class="one"></div>
-                    <div class="two"></div>
-                    <div class="three"></div>
+                    <div class="span">
+                        <div class="one"></div>
+                        <div class="two"></div>
+                        <div class="three"></div>
+                    </div>
                 </div>
                 <nav id="menu">
 
                     <ul>
-                        <li>
-                            <a href="javascript:void(0)">Who are we</a>
+                        <li class="relative">
+                            <a href="../../assets/html/who-are-we.html" target="_blank" class="navs">Who are we</a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0)">Who are we</a>
+                                    </li>
+                                    <li class="relative">
+                                        <a href="javascript:void(0)">Who are we2</a>
+
+                                        <div class="submenu">
+                                            <ul>
+                                                <li>
+                                                    <a href="javascript:void(0)">Who are we 1</a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0)">Who are we 2</a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0)">Who are we 3</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Who are we||</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li>
-                            <a href="javascript:void(0)">Testimonial</a>
+                            <a href="../../assets/html/testimonial.html" target="_blank" class="navs">Testimonial</a>
                         </li>
                         <li>
-                            <a href="javascript:void(0)">News & Articles</a>
+                            <a href="../../assets/html/news.html" target="_blank"  class="navs">News & Articles</a>
                         </li>
-                        <li>
-                            <a href="javascript:void(0)" class="btn-primary">Get In Touch</a>
+                        <li class="btn-nav">
+                            <a href="javascript:void(0)" class="btn-primary navs" style="border: 1px solid
+                                black;">Get In Touch</a>
                         </li>
                         <div class="header-icons">
                             <a href="https://www.facebook.com/" class="mini_header_icons">
@@ -111,11 +149,26 @@
 
 
 
+
+
+
 <!-- CARDS -->
-<section class="services">
+<section class="cards-item" style="margin-bottom: 30px;">
     <div class="container">
-        <div class="services-title text-center d-flex justify-between align-center">
-            <h4 class="services-heading">Our Team</h4>
+        <div class="services-titlee text-center d-flex justify-between align-center">
+
+            <div class="linkWrap">
+                <a class="style-17" href="">
+                    <span>
+                        <h2>
+                           Our Team
+                        </h2>
+                    </span>
+                    <svg class="link__graphic link__graphic--stroke link__graphic--scribble" width="100%" height="11" viewBox="0 0 101 9">
+                        <path d="M.426 1.973C4.144 1.567 17.77-.514 21.443 1.48 24.296 3.026 24.844 4.627 27.5 7c3.075 2.748 6.642-4.141 10.066-4.688 7.517-1.2 13.237 5.425 17.59 2.745C58.5 3 60.464-1.786 66 2c1.996 1.365 3.174 3.737 5.286 4.41 5.423 1.727 25.34-7.981 29.14-1.294" pathLength="1"></path>
+                    </svg>
+                </a>
+            </div>
             <a href="javascript:void(0)" class="btn-sucsess">View All</a>
         </div>
         <div class="services-inner">
@@ -130,9 +183,9 @@
                     <h5>John Doe</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean l
                         aoreet lacus sed ex pharetra, vel pretium justo facilisis. Proin fringilla luctus tortor nec vehicul</p>
-                <a href="javascript:void">
-                    <img src="../../assets/img/icons/Path 12204.svg" />
-                </a>
+                    <a href="javascript:void">
+                        <img src="../../assets/img/icons/Path 12204.svg" />
+                    </a>
                 </div>
                 <div class="modal">
                     <div class="modal-overlay modal-toggle_2"></div>
@@ -150,7 +203,7 @@
                         <div class="modal-body">
                             <div class="modal-content">
                                 <div class="model-img">
-                                    <img src="../../assets/img/background/team-2.svg (1).png" width="100%"/>
+                                    <img src="../../assets/img/background/team-2.svg (1).png" width="100%" />
                                     <div class="content-mode">
                                         <h2>HEAD OF DELIVERY</h2>
                                     </div>
@@ -171,9 +224,9 @@
                     <h5>John Doe</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean l
                         aoreet lacus sed ex pharetra, vel pretium justo facilisis. Proin fringilla luctus tortor nec vehicul</p>
-                <a href="javascript:void">
-                    <img src="../../assets/img/icons/Path 12204.svg" />
-                </a>
+                    <a href="javascript:void">
+                        <img src="../../assets/img/icons/Path 12204.svg" />
+                    </a>
                 </div>
                 <div class="modal">
                     <div class="modal-overlay modal-toggle_2"></div>
@@ -212,9 +265,9 @@
                     <h5>John Doe</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean l
                         aoreet lacus sed ex pharetra, vel pretium justo facilisis. Proin fringilla luctus tortor nec vehicul</p>
-                <a href="javascript:void">
-                    <img src="../../assets/img/icons/Path 12204.svg" />
-                </a>
+                    <a href="javascript:void">
+                        <img src="../../assets/img/icons/Path 12204.svg" />
+                    </a>
                 </div>
                 <div class="modal">
                     <div class="modal-overlay modal-toggle_2"></div>
@@ -324,58 +377,97 @@
                     </div>
                 </div>
             </div>
-         </div>
+        </div>
     </div>
 </section>
 
+
+<!-- FOOTER--------->
+
+
+
+<footer>
+    <div class="container">
+        <div class="footer-inner">
+            <div class="shapes-img">
+                <img src="../../assets/img/vectour/Group 2564.svg" />
+            </div>
+            <div class="footer-items">
+                <h3>Get In Touch</h3>
+                <div class="footer-left-section d-flex">
+
+                    <ul>
+                        <li>
+                            <a href="tel:01234567890" class="d-flex">
+                                <div class="call-img">
+                                    <img src="../../assets/img/icons/Path 12188.svg" />
+                                </div>
+                                <h5>01234567890</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="email:hello@abg.co.uk" class="d-flex">
+                                <div class="call-img">
+                                    <img src="../../assets/img/icons/Path 12187.svg" />
+                                </div>
+                                <h5>hello@abg.co.uk</h5>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="email:hello@abg.co.uk" class="d-flex">
+                                <div class="call-img">
+                                    <img src="../../assets/img/icons/Path 12218.svg" />
+                                </div>
+                                <h5 class="max">110 Road name here Town or place Dl12 SQU</h5>
+                            </a>
+                        </li>
+                        <h4>GET DIRECTIONS</h4>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-items">
+                <div class="footer-right-section">
+                    <div class="icons-img">
+                        <a href="https://www.linkedin.com/login" target="_blank">
+                            <img src="../../assets/img/background/Group 1495.svg" />
+                        </a>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <img src="../../assets/img/icons/Group 1492.svg" />
+                        </a>
+                        <a href="https://www.instagram.com/accounts/login/" target="_blank">
+                            <img src="../../assets/img/icons/Group 1493.svg" />
+                        </a>
+                        <a href="https://x.com/i/flow/login" target="_blank">
+                            <img src="../../assets/img/icons/Group 1494.svg" />
+                        </a>
+                    </div>
+                    <h4 class="form-title">Sign Up & Stay Updated</h4>
+                    <form class="forms">
+                        <input placeholder="Enter Email Address..." type="email" required />
+                        <button type="sumbit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M5 12l14 0" />
+                                <path d="M13 18l6 -6" />
+                                <path d="M13 6l6 6" />
+                            </svg>
+                        </button>
+                        <h6>PRIVACY POLICY</h6>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" type="text/javascript"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" type="text/javascript"></script>
-    <script>
+    <script src="../../assets/js/main.js" type="text/javascript"></script>
 
-    $('.js-btn-modal').on('click', function () {
-        $('#overlay').fadeIn();
-        var id = $(this).data('id');
-        $('.js-modal[data-id="modal' + id + '"]').fadeIn();
-    });
 
-    $('.js-close-btn').on('click', function () {
-        $('#overlay').fadeOut();
-        $('.js-modal').fadeOut();
-    });
-    $('#overlay').on('click', function () {
-        $('#overlay').fadeOut();
-        $('.js-modal').fadeOut();
-    });
 
-      $(window).on('load', function () {
-            setTimeout(function () { // allowing 3 secs to fade out loader
-                $('.page-loader').fadeOut('slow');
-            }, 3500);
-        });
-
-    $("#toggle").click(function () {
-        $(this).toggleClass("on");
-        $("#menu").slideToggle();
-    });
-    window.addEventListener("scroll", function () {
-        let header = document.querySelector("header");
-        if (window.scrollY >= 40) {
-            header.style.backgroundColor = "var(--dark)";
-            header.style.transition = "background-color 0.3s ease, padding 0.3s ease";
-        } else {
-            header.style.backgroundColor = "transparent";
-            header.style.padding = " 0";
-        }
-    });
-    window.addEventListener("scroll", function () {
-        let header = document.querySelector("header");
-        if (window.scrollY >= 40) {
-            header.classList.add("scrolled");
-        } else {
-            header.classList.remove("scrolled");
-        }
-    });
-    </script>
 </body>
 
 </html>
