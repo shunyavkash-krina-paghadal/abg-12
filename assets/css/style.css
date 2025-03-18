@@ -149,6 +149,11 @@ li{
     text-align: center;
     margin-top: 20px;
 }
+.the-titlee{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+}
 .btn-sucsess{
     padding: 15px 45px;
     border: 1px solid transparent;
@@ -476,6 +481,10 @@ section.two-col-section {
 
 .the-process{
     margin-top:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .the-process-inner{
     display: grid;
@@ -483,18 +492,24 @@ section.two-col-section {
     gap: 15px;
     text-align: center;
 }
-.the-title{
+.the-titlee{
     text-align: center;
     padding-top: 30px;
+    margin-top: 190px;
+
 }
-.the-title h2{
+.the-title{
+    text-align: center;
+}
+
+.the-titlee h2{
     font-size:40px;
     font-weight:500;
     cursor: pointer;
 
     color: var(--theme-color);
 }
-.the-title p{
+.the-titlee p{
     max-width: 700px;
     text-align: center;
     margin: auto;

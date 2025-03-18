@@ -247,7 +247,17 @@ section.who-banner {
 
 
 @media (max-width:790px) {
-    .services-titlee {
+    .the-titlee{
+        margin-top: inherit;
+    }
+    .the-processss{
+    padding-top: 90px;
+    padding-bottom: 30px;
+}
+.linkWrap h2{
+   margin-bottom: 20px;
+}
+.services-titlee {
     display: flex;
     align-items: center;
     justify-content: space-between;
