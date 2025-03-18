@@ -149,11 +149,6 @@ li{
     text-align: center;
     margin-top: 20px;
 }
-.the-titlee{
-   display: flex;
-   align-items: center;
-   flex-direction: column;
-}
 .btn-sucsess{
     padding: 15px 45px;
     border: 1px solid transparent;
@@ -187,6 +182,17 @@ li{
     transition: 0.3s all ease-in-out;
     border: 1px solid black;
 }
+section.the-pro {
+    text-align: center;
+    padding-top: 198px;
+}
+section.the-pro p{
+    max-width: 600px;
+    text-align: center;
+    margin: auto;
+    padding-top: 30px;
+}
+
 .btn-sucsess:hover:before{
     top:0;
     transition: 0.3s all ease-in-out;
@@ -385,6 +391,7 @@ section.two-col-section {
     font-size: 12px;
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 .two-col-content a{
     color: var(--theme-color);
@@ -479,46 +486,14 @@ section.two-col-section {
 
 /* THE-PROCESS START--------------- */
 
-.the-process{
-    margin-top:0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+
 .the-process-inner{
     display: grid;
     grid-template-columns: repeat(3 , 1fr);
     gap: 15px;
     text-align: center;
 }
-.the-titlee{
-    text-align: center;
-    padding-top: 30px;
-    margin-top: 190px;
 
-}
-.the-title{
-    text-align: center;
-}
-
-.the-titlee h2{
-    font-size:40px;
-    font-weight:500;
-    cursor: pointer;
-
-    color: var(--theme-color);
-}
-.the-titlee p{
-    max-width: 700px;
-    text-align: center;
-    margin: auto;
-    font-size: 15px;
-    color: var(--theme-color);
-    font-weight: 300;
-    line-height: 30px;
-    padding-top: 20px;
-}
 
 .num{
     position: absolute;
@@ -703,6 +678,11 @@ transform: matrix(-1, 0, 0, -1, 0, 0);
     justify-content: space-between;
     padding-top: 200px;
     margin-bottom: 70px;
+}
+.services-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .services-titlee h2{
     font-size:40px;
@@ -1853,9 +1833,19 @@ form textarea,input {
 button{
         cursor: pointer;
 }
-.the-processs{
-    padding: 40px 0;
-
+.the-proces{
+    padding: 70px 0;
+}
+.the-proces .the-title-sub{
+      text-align: center;
+      color: var(--theme-color);
+      margin-bottom: 20px;
+}
+.the-proces p{
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
 }
 .Group-img{
  position: fixed;
@@ -2054,13 +2044,6 @@ border-left: 2px solid black;
     display: flex;
     align-items: flex-start;
 }
-.the-title{
-    display: flex;
-    flex-direction: column;
-    align-items:flex-start;
-}
-
-
 
 
 .tabs{
