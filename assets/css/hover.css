@@ -212,18 +212,14 @@
 
 .btn-info {
   display: inline-flex;
-  /* vertical-align: middle; */
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
-  position: relative;
   background: var(--theme-color);
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  padding: 13px 36px;
+  padding: 15px 46px;
   color: var(--theme-black);
   border-radius: 25px;
+  font-size: 14px;
+  align-items: center;
 }
 .btn-info:before {
   content: "";
@@ -235,7 +231,6 @@
   bottom: 0;
   background: var(--theme-green);
   transform: scale(1);
-  -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   border-radius: 25px;
 }
@@ -262,7 +257,7 @@
   transition-property: color;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
-  padding: 13px 36px;
+  padding: 13px 46px;
   color: var(--theme-black) !important;
   border-radius: 25px;
   margin-left: 20px;
@@ -306,7 +301,7 @@
   transition-property: color;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
-  padding: 13px 36px;
+  padding: 13px 46px;
   color: var(--theme-black) !important;
   border-radius: 25px;
   margin-left: 20px;
@@ -341,7 +336,7 @@
 .btn-primary{
   border: 1px solid var(--theme-white);
   border-radius: 25px;
-  padding: 13px 36px;
+  padding: 13px 46px;
 }
 .btn-primary:hover{
   background-color: var(--theme-green);

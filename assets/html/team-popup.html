@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>team popup </title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <link rel="stylesheet" href="https://vineethtrv.github.io/loader/">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" type="text/css" />
@@ -19,369 +18,376 @@
 
 <body>
 
-<div class="page-loader">
-    <div class="spinner"></div>
-    <div class="txt">loding....</div>
-</div>
-<div class="cursor"></div>
-<div class="cursor2"></div>
- 
+    <div class="page-loader">
+        <div class="spinner"></div>
+        <div class="txt">loding....</div>
+    </div>
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
 
-<a id="button">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-arrow-badge-up">
-        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-        <path d="M11.375 6.22l-5 4a1 1 0 0 0 -.375 .78v6l.006 .112a1 1 0 0 0 1.619 .669l4.375 -3.501l4.375 3.5a1 1 0 0 0 1.625 -.78v-6a1 1 0 0 0 -.375 -.78l-5 -4a1 1 0 0 0 -1.25 0z" />
-    </svg>
-</a>
+    <a class="back-to-top" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-arrow-badge-up">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M11.375 6.22l-5 4a1 1 0 0 0 -.375 .78v6l.006 .112a1 1 0 0 0 1.619 .669l4.375 -3.501l4.375 3.5a1 1 0 0 0 1.625 -.78v-6a1 1 0 0 0 -.375 -.78l-5 -4a1 1 0 0 0 -1.25 0z" />
+        </svg>
+    </a>
+
+
     <!-- HEADER-------------->
-<header class="header">
-    <div class="topbar">
+    <header class="header">
+        <div class="topbar">
+            <div class="container">
+                <div class="topbar-inner">
+                    <div class="topbar-left-section">
+                        <div class="topbar-content">
+                            <a href="tel:01234 567890">
+                                <img src="http://127.0.0.1:5500/assets/img/icons/call.png" alt="call" title="call" />
+                                01234 567890- Mon-Fri 9am to 6.30pm
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="topbar-right-section">
+                        <div class="scoial-img">
+
+                            <a href="https://in.linkedin.com/">
+                                <img src="../../assets/img/icons/linkdin.png" title="linkdin" alt="linkdin" />
+                            </a>
+                            <a href="https://www.facebook.com/">
+                                <img src="../../assets/img/icons/facebook.png" title="facebook" alt="facebook" />
+                            </a>
+                            <a href="https://www.instagram.com/">
+                                <img src="../../assets/img/icons/instagram.png" title="instagram" alt="instagram" />
+                            </a>
+                            <a href="https://x.com/i/flow/login">
+                                <img src="../../assets/img/icons/twitter.png" title="twitter" alt="twitter" />
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="container">
-            <div class="topbar-inner">
-                <div class="topbar-left-section">
-                    <div class="topbar-content">
-                        <a href="tel:01234 567890">
-                            <img src="../../assets/img/icons/call.png" alt="call" title="call" />
-                            <a href="javascript:void(0)">01234 567890- Mon-Fri 9am to 6.30pm</a>
+            <div class="header-innerr">
+                <div class="header-left-section">
+                    <div class="logo-light">
+                        <a href="javascript:void(0)">
+                            <img src="../../assets/img/icons/logo-dark.png" title="logo-dark" alt="logo-dark" class="logo-darks" />
+                            <img src="../../assets/img/icons/logo-light.png" title="logo-light" alt="logo-light" class="logo d-none" />
                         </a>
-
                     </div>
                 </div>
-                <div class="topbar-right-section">
-                    <div class="scoial-img">
-
-                        <a href="https://in.linkedin.com/">
-                            <img src="../../assets/img/icons/linkdin.png" title="linkdin" alt="linkdin" />
-                        </a>
-                        <a href="https://www.facebook.com/">
-                            <img src="../../assets/img/icons/facebook.png" title="facebook" alt="facebook" />
-                        </a>
-                        <a href="https://www.instagram.com/">
-                            <img src="../../assets/img/icons/instagram.png" title="instagram" alt="instagram" />
-                        </a>
-                        <a href="https://x.com/i/flow/login">
-                            <img src="../../assets/img/icons/twitter.png" title="twitter" alt="twitter" />
-                        </a>
-
+                <div class="header-right-section">
+                    <div id="toggle">
+                        <div class="span">
+                            <div class="one"></div>
+                            <div class="two"></div>
+                            <div class="three"></div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="header-innerr">
-            <div class="header-left-section">
-                <div class="logo-light">
-                    <a href="javascript:void(0)">
-                        <img src="../../assets/img/icons/logo-dark.png" title="logo-dark" alt="logo-dark" class="logo-darks" />
-                        <img src="../../assets/img/icons/logo-light.png" title="logo-light" alt="logo-light" class="logo d-none" />
-                    </a>
-                </div>
-            </div>
-            <div class="header-right-section">
-                <div id="toggle">
-                    <div class="span">
-                        <div class="one"></div>
-                        <div class="two"></div>
-                        <div class="three"></div>
-                    </div>
-                </div>
-                <nav id="menu">
+                    <nav id="menu">
 
-                    <ul>
-                        <li class="relative">
-                            <a href="../../assets/html/who-are-we.html" target="_blank" class="navs">Who are we</a>
-                            <div class="dropdown">
-                                <ul>
-                                    <li>
-                                        <a href="javascript:void(0)">Who are we</a>
-                                    </li>
-                                    <li class="relative">
-                                        <a href="javascript:void(0)">Who are we2</a>
+                        <ul>
+                            <li class="relative">
+                                <a href="../../assets/html/who-are-we.html" target="_blank" class="navs">Who are we</a>
+                                <div class="dropdown">
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:void(0)">Who are we</a>
+                                        </li>
+                                        <li class="relative">
+                                            <a href="javascript:void(0)">Who are we2</a>
 
-                                        <div class="submenu">
-                                            <ul>
-                                                <li>
-                                                    <a href="javascript:void(0)">Who are we 1</a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:void(0)">Who are we 2</a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:void(0)">Who are we 3</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)">Who are we||</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="../../assets/html/testimonial.html" target="_blank" class="navs">Testimonial</a>
-                        </li>
-                        <li>
-                            <a href="../../assets/html/news.html" target="_blank"  class="navs">News & Articles</a>
-                        </li>
-                        <li class="btn-nav">
-                            <a href="javascript:void(0)" class="btn-primary navs" style="border: 1px solid
+                                            <div class="submenu">
+                                                <ul>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Who are we 1</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Who are we 2</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Who are we 3</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">Who are we||</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="../../assets/html/testimonial.html" target="_blank" class="navs">Testimonial</a>
+                            </li>
+                            <li>
+                                <a href="../../assets/html/news.html" target="_blank" class="navs">News & Articles</a>
+                            </li>
+                            <li class="btn-nav">
+                                <a href="javascript:void(0)" class="btn-primary navs" style="border: 1px solid
                                 black;">Get In Touch</a>
-                        </li>
-                        <div class="header-icons">
-                            <a href="https://www.facebook.com/" class="mini_header_icons">
-                                <img src="../../assets/img/icons/facebook.png" alt="images" class="facebook_icons" draggable="false">
-                            </a>
-                            <a href="https://x.com/i/flow/login" class="mini_header_icons">
-                                <img src="../../assets/img/icons/twitter.png" alt="images" class="twitter_icons" draggable="false">
-                            </a>
-                            <a href="https://www.instagram.com/" class="mini_header_icons">
-                                <img src="../../assets/img/icons/instagram.png" alt="images" class="instagram_icons" draggable="false">
-                            </a>
-                            <a href="https://in.linkedin.com/" class="mini_header_icons">
-                                <img src="../../assets/img/icons/linkdin.png" alt="images" class="linkedin_icons" draggable="false">
-                            </a>
-                        </div>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-</header>
-
-
-
-
-
-
-<!-- CARDS -->
-<section class="cards-item" style="margin-bottom: 30px;">
-    <div class="container">
-        <div class="services-titlee text-center d-flex justify-between align-center">
-
-            <div class="linkWrap">
-                <a class="style-17" href="">
-                    <span>
-                        <h2>
-                           Our Team
-                        </h2>
-                    </span>
-                    <svg class="link__graphic link__graphic--stroke link__graphic--scribble" width="100%" height="11" viewBox="0 0 101 9">
-                        <path d="M.426 1.973C4.144 1.567 17.77-.514 21.443 1.48 24.296 3.026 24.844 4.627 27.5 7c3.075 2.748 6.642-4.141 10.066-4.688 7.517-1.2 13.237 5.425 17.59 2.745C58.5 3 60.464-1.786 66 2c1.996 1.365 3.174 3.737 5.286 4.41 5.423 1.727 25.34-7.981 29.14-1.294" pathLength="1"></path>
-                    </svg>
-                </a>
-            </div>
-            <a href="javascript:void(0)" class="btn-sucsess">View All</a>
-        </div>
-        <div class="services-inner">
-
-            <div class="services-items js-btn-modal" data-id="1">
-                <div class="services-img" id="element">
-                    <img src="../../assets/img/background/team-1.svg" title="services-1" alt="services-1" width="100%" />
+                            </li>
+                            <div class="header-icons">
+                                <a href="https://www.facebook.com/" class="mini_header_icons">
+                                    <img src="../../assets/img/icons/facebook.png" alt="images" class="facebook_icons" draggable="false">
+                                </a>
+                                <a href="https://x.com/i/flow/login" class="mini_header_icons">
+                                    <img src="../../assets/img/icons/twitter.png" alt="images" class="twitter_icons" draggable="false">
+                                </a>
+                                <a href="https://www.instagram.com/" class="mini_header_icons">
+                                    <img src="../../assets/img/icons/instagram.png" alt="images" class="instagram_icons" draggable="false">
+                                </a>
+                                <a href="https://in.linkedin.com/" class="mini_header_icons">
+                                    <img src="../../assets/img/icons/linkdin.png" alt="images" class="linkedin_icons" draggable="false">
+                                </a>
+                            </div>
+                        </ul>
+                    </nav>
                 </div>
+            </div>
+    </header>
 
-                <div class="services-content">
-                    <h4>COURIER</h4>
-                    <h5>John Doe</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean l
-                        aoreet lacus sed ex pharetra, vel pretium justo facilisis. Proin fringilla luctus tortor nec vehicul</p>
-                    <a href="javascript:void">
-                        <img src="../../assets/img/icons/Path 12204.svg" />
+
+
+
+
+
+    <!-- CARDS -->
+    <section class="cards-item" style="margin-bottom: 30px;">
+        <div class="container">
+            <div class="services-titlee text-center d-flex justify-between align-center">
+
+                <div class="linkWrap">
+                    <a class="style-17" href="">
+                        <span>
+                            <h2>
+                                Our Team
+                            </h2>
+                        </span>
+                        <svg class="link__graphic link__graphic--stroke link__graphic--scribble" width="100%" height="11" viewBox="0 0 101 9">
+                            <path d="M.426 1.973C4.144 1.567 17.77-.514 21.443 1.48 24.296 3.026 24.844 4.627 27.5 7c3.075 2.748 6.642-4.141 10.066-4.688 7.517-1.2 13.237 5.425 17.59 2.745C58.5 3 60.464-1.786 66 2c1.996 1.365 3.174 3.737 5.286 4.41 5.423 1.727 25.34-7.981 29.14-1.294" pathLength="1"></path>
+                        </svg>
                     </a>
                 </div>
-                <div class="modal">
-                    <div class="modal-overlay modal-toggle_2"></div>
-                    <div class="modal-wrapper modal-transition">
-                        <div class="modal-header">
-                            <h2 class="modal-heading"></h2>
-                            <button class="modal-close modal-toggle">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                                </svg>
-                            </button>
+                <a href="javascript:void(0)" class="btn-sucsess">View All</a>
+            </div>
+            <div class="services-inner">
 
-                        </div>
+                <div class="services-items js-btn-modal" data-id="1">
+                    <div class="services-img" id="element">
+                        <img src="../../assets/img/background/team-1.svg" title="services-1" alt="services-1" width="100%" />
+                    </div>
 
-                        <div class="modal-body">
-                            <div class="modal-content">
-                                <div class="model-img">
-                                    <img src="../../assets/img/background/team-2.svg (1).png" width="100%" />
-                                    <div class="content-mode">
-                                        <h2>HEAD OF DELIVERY</h2>
+                    <div class="services-content">
+                        <h4>COURIER</h4>
+                        <h5>John Doe</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean l
+                            aoreet lacus sed ex pharetra, vel pretium justo facilisis. Proin fringilla luctus tortor nec vehicul</p>
+                        <a href="javascript:void">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10.207" height="12.41" viewBox="0 0 9 9.21" class="aero">
+                                <path id="Path_12204" data-name="Path 12204" d="M157.586,96.239l-4.065-3.389a.658.658,0,0,0-.819,0l-4.065,3.389a.64.64,0,1,0,.819.983l3.019-2.517-.007,6.568a.641.641,0,0,0,.639.64h0a.641.641,0,0,0,.64-.639l.007-6.565,3.013,2.512a.639.639,0,1,0,.818-.983Z" transform="translate(101.913 -148.406) rotate(90)" fill="#515a68" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="modal">
+                        <div class="modal-overlay modal-toggle_2"></div>
+                        <div class="modal-wrapper modal-transition">
+                            <div class="modal-header">
+                                <h2 class="modal-heading"></h2>
+                                <button class="modal-close modal-toggle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                                    </svg>
+                                </button>
+
+                            </div>
+
+                            <div class="modal-body">
+                                <div class="modal-content">
+                                    <div class="model-img">
+                                        <img src="../../assets/img/background/team-2.svg (1).png" width="100%" />
+                                        <div class="content-mode">
+                                            <h2>HEAD OF DELIVERY</h2>
+                                        </div>
                                     </div>
+                                    <!-- <button class="modal-toggle">lorem</button>-->
                                 </div>
-                                <!-- <button class="modal-toggle">lorem</button>-->
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="services-items js-btn-modal" data-id="2">
-                <div class="services-img" id="element">
-                    <img src="../../assets/img/background/team-2.svg" title="services-1" alt="services-1" width="100%" />
-                </div>
+                <div class="services-items js-btn-modal" data-id="2">
+                    <div class="services-img" id="element">
+                        <img src="../../assets/img/background/team-2.svg" title="services-1" alt="services-1" width="100%" />
+                    </div>
 
-                <div class="services-content">
-                    <h4>COURIER</h4>
-                    <h5>John Doe</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean l
-                        aoreet lacus sed ex pharetra, vel pretium justo facilisis. Proin fringilla luctus tortor nec vehicul</p>
-                    <a href="javascript:void">
-                        <img src="../../assets/img/icons/Path 12204.svg" />
-                    </a>
-                </div>
-                <div class="modal">
-                    <div class="modal-overlay modal-toggle_2"></div>
-                    <div class="modal-wrapper modal-transition">
-                        <div class="modal-header">
-                            <h2 class="modal-heading"></h2>
-                            <button class="modal-close modal-toggle">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                                </svg>
-                            </button>
+                    <div class="services-content">
+                        <h4>COURIER</h4>
+                        <h5>John Doe</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean l
+                            aoreet lacus sed ex pharetra, vel pretium justo facilisis. Proin fringilla luctus tortor nec vehicul</p>
+                        <a href="javascript:void">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10.207" height="12.41" viewBox="0 0 9 9.21" class="aero">
+                                <path id="Path_12204" data-name="Path 12204" d="M157.586,96.239l-4.065-3.389a.658.658,0,0,0-.819,0l-4.065,3.389a.64.64,0,1,0,.819.983l3.019-2.517-.007,6.568a.641.641,0,0,0,.639.64h0a.641.641,0,0,0,.64-.639l.007-6.565,3.013,2.512a.639.639,0,1,0,.818-.983Z" transform="translate(101.913 -148.406) rotate(90)" fill="#515a68" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="modal">
+                        <div class="modal-overlay modal-toggle_2"></div>
+                        <div class="modal-wrapper modal-transition">
+                            <div class="modal-header">
+                                <h2 class="modal-heading"></h2>
+                                <button class="modal-close modal-toggle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                                    </svg>
+                                </button>
 
-                        </div>
+                            </div>
 
-                        <div class="modal-body">
-                            <div class="modal-content">
-                                <div class="model-img">
-                                    <img src="../../assets/img/background/team-2 (1).png" width="100%" />
-                                    <div class="content-mode">
-                                        <h2>HEAD OF DELIVERY</h2>
+                            <div class="modal-body">
+                                <div class="modal-content">
+                                    <div class="model-img">
+                                        <img src="../../assets/img/background/team-2 (1).png" width="100%" />
+                                        <div class="content-mode">
+                                            <h2>HEAD OF DELIVERY</h2>
+                                        </div>
                                     </div>
-                                </div>
 
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="services-items js-btn-modal" data-id="3">
-                <div class="services-img" id="element">
-                    <img src="../../assets/img/background/team-3.svg" title="services-1" alt="services-1" width="100%" />
-                </div>
+                <div class="services-items js-btn-modal" data-id="3">
+                    <div class="services-img" id="element">
+                        <img src="../../assets/img/background/team-3.svg" title="services-1" alt="services-1" width="100%" />
+                    </div>
 
-                <div class="services-content">
-                    <h4>COURIER</h4>
-                    <h5>John Doe</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean l
-                        aoreet lacus sed ex pharetra, vel pretium justo facilisis. Proin fringilla luctus tortor nec vehicul</p>
-                    <a href="javascript:void">
-                        <img src="../../assets/img/icons/Path 12204.svg" />
-                    </a>
-                </div>
-                <div class="modal">
-                    <div class="modal-overlay modal-toggle_2"></div>
-                    <div class="modal-wrapper modal-transition">
-                        <div class="modal-header">
-                            <h2 class="modal-heading"></h2>
-                            <button class="modal-close modal-toggle">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                                </svg>
-                            </button>
+                    <div class="services-content">
+                        <h4>COURIER</h4>
+                        <h5>John Doe</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean l
+                            aoreet lacus sed ex pharetra, vel pretium justo facilisis. Proin fringilla luctus tortor nec vehicul</p>
+                        <a href="javascript:void">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10.207" height="12.41" viewBox="0 0 9 9.21" class="aero">
+                                <path id="Path_12204" data-name="Path 12204" d="M157.586,96.239l-4.065-3.389a.658.658,0,0,0-.819,0l-4.065,3.389a.64.64,0,1,0,.819.983l3.019-2.517-.007,6.568a.641.641,0,0,0,.639.64h0a.641.641,0,0,0,.64-.639l.007-6.565,3.013,2.512a.639.639,0,1,0,.818-.983Z" transform="translate(101.913 -148.406) rotate(90)" fill="#515a68" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="modal">
+                        <div class="modal-overlay modal-toggle_2"></div>
+                        <div class="modal-wrapper modal-transition">
+                            <div class="modal-header">
+                                <h2 class="modal-heading"></h2>
+                                <button class="modal-close modal-toggle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                                    </svg>
+                                </button>
 
-                        </div>
+                            </div>
 
-                        <div class="modal-body">
-                            <div class="modal-content">
-                                <div class="model-img">
-                                    <img src="../../assets/img/background/team-2 (1).png" width="100%" />
-                                    <div class="content-mode">
-                                        <h2>HEAD OF DELIVERY</h2>
+                            <div class="modal-body">
+                                <div class="modal-content">
+                                    <div class="model-img">
+                                        <img src="../../assets/img/background/team-2 (1).png" width="100%" />
+                                        <div class="content-mode">
+                                            <h2>HEAD OF DELIVERY</h2>
+                                        </div>
                                     </div>
+                                    <!-- <button class="modal-toggle">lorem</button> -->
                                 </div>
-                                <!-- <button class="modal-toggle">lorem</button> -->
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="overlay" id="overlay"></div>
+                <div class="overlay" id="overlay"></div>
 
-            <div class="modal js-modal " data-id="modal1">
-                <button class="modal-close-btn js-close-btn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-progress-x">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path d="M10 20.777a8.942 8.942 0 0 1 -2.48 -.969" />
-                        <path d="M14 3.223a9.003 9.003 0 0 1 0 17.554" />
-                        <path d="M4.579 17.093a8.961 8.961 0 0 1 -1.227 -2.592" />
-                        <path d="M3.124 10.5c.16 -.95 .468 -1.85 .9 -2.675l.169 -.305" />
-                        <path d="M6.907 4.579a8.954 8.954 0 0 1 3.093 -1.356" />
-                        <path d="M14 14l-4 -4" />
-                        <path d="M10 14l4 -4" />
-                    </svg>
-                </button>
-                <div class="model-inner-on">
-                    <div class="model-img-on">
-                        <img src="../../assets/img/background/team-1.svg" width="100%" />
-                    </div>
-                    <div class="model-content-on">
-                        <h5>HEAD OF DELIVERY</h5>
-                        <h3>John Doe</h3>
-                        <p> Alias non eius soluta assumenda cumque a inventore voluptate repellat earum molestiae.ˀ
-                        </p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis molestiae facere id nam de dolores provident quam ab officia aut ad?</p>
+                <div class="modal js-modal " data-id="modal1">
+                    <button class="modal-close-btn js-close-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-progress-x">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M10 20.777a8.942 8.942 0 0 1 -2.48 -.969" />
+                            <path d="M14 3.223a9.003 9.003 0 0 1 0 17.554" />
+                            <path d="M4.579 17.093a8.961 8.961 0 0 1 -1.227 -2.592" />
+                            <path d="M3.124 10.5c.16 -.95 .468 -1.85 .9 -2.675l.169 -.305" />
+                            <path d="M6.907 4.579a8.954 8.954 0 0 1 3.093 -1.356" />
+                            <path d="M14 14l-4 -4" />
+                            <path d="M10 14l4 -4" />
+                        </svg>
+                    </button>
+                    <div class="model-inner-on">
+                        <div class="model-img-on">
+                            <img src="../../assets/img/background/team-1.svg" width="100%" />
+                        </div>
+                        <div class="model-content-on">
+                            <h5>HEAD OF DELIVERY</h5>
+                            <h3>John Doe</h3>
+                            <p> Alias non eius soluta assumenda cumque a inventore voluptate repellat earum molestiae.ˀ
+                            </p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis molestiae facere id nam de dolores provident quam ab officia aut ad?</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="modal js-modal" data-id="modal2">
-                <button class="modal-close-btn js-close-btn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-progress-x">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path d="M10 20.777a8.942 8.942 0 0 1 -2.48 -.969" />
-                        <path d="M14 3.223a9.003 9.003 0 0 1 0 17.554" />
-                        <path d="M4.579 17.093a8.961 8.961 0 0 1 -1.227 -2.592" />
-                        <path d="M3.124 10.5c.16 -.95 .468 -1.85 .9 -2.675l.169 -.305" />
-                        <path d="M6.907 4.579a8.954 8.954 0 0 1 3.093 -1.356" />
-                        <path d="M14 14l-4 -4" />
-                        <path d="M10 14l4 -4" />
-                    </svg>
-                </button>
-                <div class="model-inner-on">
-                    <div class="model-img-on">
-                        <img src="../../assets/img/background/team-2.svg" width="100%" />
-                    </div>
-                    <div class="model-content-on">
-                        <h5>HEAD OF DELIVERY</h5>
-                        <h3>John Doe</h3>
-                        <p> Alias non eius soluta assumenda cumque a inventore voluptate repellat earum molestiae.ˀ
-                        </p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis molestiae facere id nam de dolores provident quam ab officia aut ad?</p>
+                <div class="modal js-modal" data-id="modal2">
+                    <button class="modal-close-btn js-close-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-progress-x">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M10 20.777a8.942 8.942 0 0 1 -2.48 -.969" />
+                            <path d="M14 3.223a9.003 9.003 0 0 1 0 17.554" />
+                            <path d="M4.579 17.093a8.961 8.961 0 0 1 -1.227 -2.592" />
+                            <path d="M3.124 10.5c.16 -.95 .468 -1.85 .9 -2.675l.169 -.305" />
+                            <path d="M6.907 4.579a8.954 8.954 0 0 1 3.093 -1.356" />
+                            <path d="M14 14l-4 -4" />
+                            <path d="M10 14l4 -4" />
+                        </svg>
+                    </button>
+                    <div class="model-inner-on">
+                        <div class="model-img-on">
+                            <img src="../../assets/img/background/team-2.svg" width="100%" />
+                        </div>
+                        <div class="model-content-on">
+                            <h5>HEAD OF DELIVERY</h5>
+                            <h3>John Doe</h3>
+                            <p> Alias non eius soluta assumenda cumque a inventore voluptate repellat earum molestiae.ˀ
+                            </p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis molestiae facere id nam de dolores provident quam ab officia aut ad?</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="modal js-modal" data-id="modal3">
-                <button class="modal-close-btn js-close-btn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-progress-x">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path d="M10 20.777a8.942 8.942 0 0 1 -2.48 -.969" />
-                        <path d="M14 3.223a9.003 9.003 0 0 1 0 17.554" />
-                        <path d="M4.579 17.093a8.961 8.961 0 0 1 -1.227 -2.592" />
-                        <path d="M3.124 10.5c.16 -.95 .468 -1.85 .9 -2.675l.169 -.305" />
-                        <path d="M6.907 4.579a8.954 8.954 0 0 1 3.093 -1.356" />
-                        <path d="M14 14l-4 -4" />
-                        <path d="M10 14l4 -4" />
-                    </svg>
-                </button>
-                <div class="model-inner-on">
-                    <div class="model-img-on">
-                        <img src="../../assets/img/background/team-3.svg" width="100%" />
-                    </div>
-                    <div class="model-content-on">
-                        <h5>HEAD OF DELIVERY</h5>
-                        <h3>John Doe</h3>
-                        <p> Alias non eius soluta assumenda cumque a inventore voluptate repellat earum molestiae.ˀ
-                        </p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis molestiae facere id nam de dolores provident quam ab officia aut ad?</p>
+                <div class="modal js-modal" data-id="modal3">
+                    <button class="modal-close-btn js-close-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-progress-x">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M10 20.777a8.942 8.942 0 0 1 -2.48 -.969" />
+                            <path d="M14 3.223a9.003 9.003 0 0 1 0 17.554" />
+                            <path d="M4.579 17.093a8.961 8.961 0 0 1 -1.227 -2.592" />
+                            <path d="M3.124 10.5c.16 -.95 .468 -1.85 .9 -2.675l.169 -.305" />
+                            <path d="M6.907 4.579a8.954 8.954 0 0 1 3.093 -1.356" />
+                            <path d="M14 14l-4 -4" />
+                            <path d="M10 14l4 -4" />
+                        </svg>
+                    </button>
+                    <div class="model-inner-on">
+                        <div class="model-img-on">
+                            <img src="../../assets/img/background/team-3.svg" width="100%" />
+                        </div>
+                        <div class="model-content-on">
+                            <h5>HEAD OF DELIVERY</h5>
+                            <h3>John Doe</h3>
+                            <p> Alias non eius soluta assumenda cumque a inventore voluptate repellat earum molestiae.ˀ
+                            </p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis molestiae facere id nam de dolores provident quam ab officia aut ad?</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
 

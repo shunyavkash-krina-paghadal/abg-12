@@ -59,7 +59,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 10px 0;
 }
 .header-innerr {
   display: flex;
@@ -72,10 +71,16 @@ header {
   align-items: center;
   gap: 24px;
   margin-block: 10px;
-}
 
+}
+.header-right-section li{
+  padding: 10px 0;
+}
 .header-right-section .logo-light img {
   max-width: 200px;
+}
+.dropdown li{
+  padding: 0;
 }
 .header-right-section a {
   color: var(--theme-white);
@@ -88,7 +93,10 @@ header {
 .logo-dark {
   display: none;
 }
-
+.header-icons {
+    margin-top: 160px;
+    display: none;
+}
 .header-icons a{
   background-color: #d0d0d0a1;
   margin-right: 10px;
