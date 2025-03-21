@@ -88,7 +88,8 @@ header {
 .logo-dark {
   display: none;
 }
-.header-icons a {
+
+.header-icons a{
   background-color: #d0d0d0a1;
   margin-right: 10px;
   width: 60px;
@@ -98,13 +99,10 @@ header {
   padding: 10px;
   text-align: center;
   align-items: center;
-  display: inline-flex;
+  display:none;
   justify-content: center;
   flex-direction: row-reverse;
-  display: none;
-}
-.header-icons {
-  display: none;
+
 }
 .header-icons a:hover {
   background-color: var(--theme-green);
@@ -412,7 +410,7 @@ nav .dropdown li:hover .submenu {
 
 /* BACK-TO-TOP-- */
 
-.button {
+.back-to-top {
   display: inline-block;
   background-color: var(--theme-green);
   width: 50px;
@@ -427,7 +425,7 @@ nav .dropdown li:hover .submenu {
   visibility: hidden;
   z-index: 1000;
 }
-.button::after {
+.back-to-top::after {
   content: "";
   font-family: FontAwesome;
   font-weight: normal;
@@ -436,16 +434,16 @@ nav .dropdown li:hover .submenu {
   line-height: 50px;
   color: #fff;
 }
-.button:hover {
+.back-to-top:hover {
   cursor: pointer;
   background-color: var(--dark);
   color: var(--theme-white);
 }
-.button:active {
+.back-to-top:active {
   background-color: var(--dark);
   color: var(--theme-white);
 }
-.button.show {
+.back-to-top.show {
   opacity: 1;
   visibility: visible;
 }

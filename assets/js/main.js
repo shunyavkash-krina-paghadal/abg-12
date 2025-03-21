@@ -168,7 +168,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // BUTTONS-BACK---
 
 
-var btn = $(".button");
+var btn = $(".back-to-top");
 
 $(window).scroll(function () {
   if ($(window).scrollTop() > 300) {
