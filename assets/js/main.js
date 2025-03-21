@@ -22,10 +22,11 @@ $("#toggle").click(function () {
   $("#menu").slideToggle();
 });
 
-// cursor
+
 
 window.addEventListener("scroll", function () {
-  let header = document.querySelector("header , .topbar");
+  let header = document.querySelector("header");
+  let topbar = document.querySelector(".topbar");
   if (window.scrollY >= 40) {
     header.style.backgroundColor = "var(--dark)";
     header.style.transition = "background-color 0.3s ease, padding 0.3s ease";
