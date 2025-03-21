@@ -22,11 +22,9 @@ $("#toggle").click(function () {
   $("#menu").slideToggle();
 });
 
-
-
+let header = document.querySelector("header");
+let topbar = document.querySelector(".topbar");
 window.addEventListener("scroll", function () {
-  let header = document.querySelector("header");
-  let topbar = document.querySelector(".topbar");
   if (window.scrollY >= 40) {
     header.style.backgroundColor = "var(--dark)";
     header.style.transition = "background-color 0.3s ease, padding 0.3s ease";
@@ -40,7 +38,6 @@ window.addEventListener("scroll", function () {
 // HEADER-SCROLL--
 
 window.addEventListener("scroll", function () {
-  let header = document.querySelector("header");
   if (window.scrollY >= 40) {
     header.classList.add("scrolled");
   } else {
@@ -106,7 +103,6 @@ $("#overlay").on("click", function () {
 // SCROOL--
 
 window.addEventListener("scroll", function () {
-  let header = document.querySelector(".header");
   if (window.scrollY >= 40) {
     header.style.backgroundColor = "var(--theme-white)";
     header.style.Color = "black";
@@ -120,7 +116,6 @@ window.addEventListener("scroll", function () {
   }
 });
 window.addEventListener("scroll", function () {
-  let header = document.querySelector(".header");
   if (window.scrollY >= 40) {
     header.classList.add("scrolled");
   } else {
@@ -164,9 +159,7 @@ document.addEventListener("DOMContentLoaded", function () {
   filterCards("all");
 });
 
-
 // BUTTONS-BACK---
-
 
 var btn = $(".back-to-top");
 
