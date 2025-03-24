@@ -13,10 +13,10 @@
     <link rel="stylesheet" href="../../assets/css/media.css" type="text/css">
 </head>
 <body>
- <div class="page-loader">
+ <!-- <div class="page-loader">
         <div class="spinner"></div>
         <div class="txt">loding....</div>
-</div>
+</div> -->
 <a class="back-to-top" href="#">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-arrow-badge-up">
         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -420,6 +420,27 @@
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" type="text/javascript"></script>
 <script src="../../assets/js/main.js" type="text/javascript"></script>
 <script>
+    let headerss = document.querySelector(".headerss");
+    window.addEventListener("scroll", function () {
+        if (window.scrollY >= 50) {
+            header.style.backgroundColor = "var(--theme-white)";
+            header.style.transition = "background-color 0.3s ease, padding 0.1s ease";
+            header.style.boxShadow = "0px 4px 10px rgba(0, 0, 0, 0.1)";
+            topbar.style.padding = "10px";
+            header.style.padding = "0";
+        } else {
+            header.style.backgroundColor = "";
+            header.style.padding = "0";
+            header.style.boxShadow = "none";
+        }
+    });
+    window.addEventListener("scroll", function () {
+        if (window.scrollY >= 40) {
+            header.classList.add("scrolled");
+        } else {
+            header.classList.remove("scrolled");
+        }
+    });
 
 </script>
 </body>

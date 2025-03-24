@@ -420,7 +420,7 @@ section.the-pro {
   padding: 50px 0;
   position: relative;
   clip-path: ellipse(100% 100% at 50% 100%);
-  
+
   }
 .qoutes-img {
   position: absolute;
@@ -1164,9 +1164,9 @@ section.the-pro {
   display: flex;
   align-items: center;
   background-color: var(--theme-white);
-  margin: 10px 0;
-  padding: 30px;
-  border-radius: 10px;
+ margin: 40px 0;
+  padding: 50px;
+  border-radius: 25px;
 }
 .heros-left-section {
   position: fixed;
@@ -1532,7 +1532,7 @@ button {
   font-size: 16px;
   line-height: 31px;
   color: var(--theme-color);
-  font-weight: 300;
+  font-weight: 400;
   max-width: 810px;
   margin-top: 30px;
 }
@@ -1567,6 +1567,7 @@ button {
   position: fixed;
   top: 0;
   right: 0;
+  pointer-events: none;
 }
 .privacy-policy-section h3 {
   padding-top: 35px;

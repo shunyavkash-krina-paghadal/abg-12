@@ -1,4 +1,26 @@
 @media (max-width: 575px) {
+  .banner-contentss {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--theme-green);
+    padding: 50px;
+    border-radius: 0px;
+    margin: 250px 0;
+}
+  .heros-btn {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.heros-btn a:first-child {
+    margin-right:inherit;
+}
   .services-title {
     display: flex;
     justify-content: space-between;
@@ -16,12 +38,12 @@
     cursor: pointer;
   }
   .the-titlee {
-        margin-top: inherit;
-        text-align: left;
-    }
- .the-titlee p{
-  text-align: left;
- }
+    margin-top: inherit;
+    text-align: left;
+  }
+  .the-titlee p {
+    text-align: left;
+  }
   .feedback-section {
     background-color: var(--theme-color);
     background-size: cover;
@@ -183,7 +205,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 99%;
+    height: 100%;
     background-image: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0),
@@ -237,6 +259,7 @@
   .banner-content p {
     color: black;
     font-size: 16px;
+
   }
   .btn-primary {
     border: 1px solid black;
@@ -303,6 +326,12 @@
 }
 
 @media (max-width: 991px) {
+  .headerss .btn-warning {
+    margin-left: 0;
+  }
+  .banner-content {
+    padding: 20px;
+  }
   .swiper-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-bullets.swiper-pagination-horizontal {
     display: flex;
@@ -322,10 +351,10 @@
     bottom: 0;
     transform: translate(-50%, -100%);
     margin: auto 0;
-}
+  }
   .swiper-pagination.swiper-pagi.swiper-pagination-bullets.swiper-pagination-horizontal {
     opacity: 0;
-}
+  }
   .header-icons {
     display: flex;
   }

@@ -54,11 +54,13 @@ header {
   position: fixed;
   width: 100%;
   z-index: 999;
+
 }
 .header-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
+    padding: 10px 0;
 }
 .header-innerr {
   display: flex;
