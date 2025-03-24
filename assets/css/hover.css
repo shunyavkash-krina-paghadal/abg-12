@@ -114,13 +114,12 @@
 }
 
 /* CONTACT-PAGES HOVER--- */
-/*
-.title-direction h1:hover,
-.direction-content h3:hover,
-.form-title h2:hover {
+
+/* .title-direction h1:hover, */
+.direction-content h3:hover {
   transition: 0.3s all ease-in-out;
   color: var(--theme-green);
-} */
+}
 
 /* POLICY-PAGES HOVER--- */
 
@@ -220,6 +219,7 @@
   border-radius: 25px;
   font-size: 14px;
   align-items: center;
+  white-space:nowrap;
 }
 .btn-info:before {
   content: "";
@@ -336,6 +336,7 @@
   border: 1px solid var(--theme-white);
   border-radius: 25px;
   padding: 13px 46px;
+  white-space: nowrap;
 }
 .btn-primary:hover{
   background-color: var(--theme-green);

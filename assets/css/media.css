@@ -1,4 +1,11 @@
 @media (max-width: 575px) {
+  .banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    overflow: hidden;
+  }
   .banner-contentss {
     position: absolute;
     top: 0;
@@ -10,17 +17,16 @@
     background-color: var(--theme-green);
     padding: 50px;
     border-radius: 0px;
-    margin: 250px 0;
-}
+  }
   .heros-btn {
     margin-top: 40px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-}
-.heros-btn a:first-child {
-    margin-right:inherit;
-}
+  }
+  .heros-btn a:first-child {
+    margin-right: inherit;
+  }
   .services-title {
     display: flex;
     justify-content: space-between;
@@ -172,6 +178,7 @@
   .who-banners .banner-contentss {
     position: static;
     margin: 0 0;
+    margin-bottom: 10px;
   }
   .who-banners {
     display: flex;
@@ -200,18 +207,7 @@
     width: 100%;
   }
   .banner-img::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 1)
-    );
-    opacity: 0.4;
+    display: none;
   }
   .banner-contents h1 {
     color: var(--theme-color);
@@ -259,17 +255,17 @@
   .banner-content p {
     color: black;
     font-size: 16px;
-
   }
   .btn-primary {
     border: 1px solid black;
     color: black !important;
   }
 
-  .banner-img {
+  /* .banner-img {
     height: 100%;
     margin-top: 20px;
-  }
+    position: static;
+  } */
   .swiper-pagination.swiper-pagi.swiper-pagination-bullets.swiper-pagination-horizontal {
     opacity: 0;
   }
@@ -326,6 +322,26 @@
 }
 
 @media (max-width: 991px) {
+  .insights-left-section {
+    display: flex;
+    flex-direction: column;
+    /* gap: 15px; */
+    padding: 30px;
+    height:inherit;
+    /* width: 25%; */
+    position: static;
+    margin-right: 30px;
+  }
+  .insights-sharethis {
+    margin-top: 0;
+    display: none;
+  }
+  .insights-left-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    display: none;
+  }
   .headerss .btn-warning {
     margin-left: 0;
   }
